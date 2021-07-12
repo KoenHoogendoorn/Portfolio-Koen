@@ -1,0 +1,191 @@
+@import "../../shared/variables.scss";
+
+// gebruik dit: https://stackoverflow.com/questions/47706903/add-a-class-to-the-html-body-tag-with-react
+// en haal alle store dingen weg wat te maken heeft met scrollingstate
+
+.StopScroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.DetailPage {
+  box-sizing: border-box;
+  width: 968px; //720 + 120 padding + 4 border
+  margin: 0 auto;
+  padding: 112px 0 160px 0; //160 - 48 for navbar
+
+  .ContentContainer {
+    padding: 80px 120px;
+    border: 4px solid $clr-martinique;
+    background-color: $clr-vulcan;
+    border-radius: 8px;
+
+    .Tags {
+      margin-top: 12px;
+    }
+
+    .Content {
+      margin-top: 32px;
+
+      p {
+        margin-bottom: 32px;
+
+        img {
+          width: 100%;
+          cursor: pointer;
+        }
+
+        .BlackLayerModal {
+          position: fixed;
+          cursor: pointer;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: $clr-vulcan, $alpha: 0.9);
+
+          .EnlargedImage {
+            cursor: default;
+            width: auto;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .CloseIcon {
+            // remove default button styles
+            border: none;
+            cursor: pointer;
+            background: none;
+            outline: 0;
+            padding: 0;
+            //---
+            position: fixed;
+            top: 24px;
+            right: 32px;
+
+            i {
+              font-size: 40px;
+              color: $clr-arrow;
+
+              &:hover {
+                color: $clr-arrow-hover;
+              }
+              &:active {
+                color: $clr-arrow-active;
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      h3 {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  nav {
+    margin-top: 16px;
+    font-size: $fnt-size-small;
+    line-height: $fnt-lineHeight-small;
+    font-weight: 700;
+
+    .ProjectLink {
+      color: $clr-butteryWhite;
+      text-decoration: none;
+      opacity: 0.4;
+
+      &:hover {
+        color: $clr-primary;
+        opacity: 1;
+      }
+      &:active {
+        color: $clr-primary-hover;
+        opacity: 1;
+      }
+    }
+
+    .ActiveProjectLink {
+      color: $clr-primary;
+      opacity: 1;
+      text-decoration: underline;
+      &:active {
+        color: $clr-primary-hover;
+        opacity: 1;
+      }
+    }
+
+    .Slash {
+      opacity: 0.4;
+
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .DetailPage {
+    width: 90%; /*fallback for browsers dont use support calc*/
+    width: -webkit-calc(100% - 64px);
+    width: -moz-calc(100% - 64px);
+    width: calc(100% - 64px);
+    padding: 48px 0 64px 0;
+
+    .ContentContainer {
+      padding: 64px;
+
+      .Content {
+        margin-top: 16px;
+
+        p {
+          margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .DetailPage {
+    .ContentContainer {
+      .Content {
+        p {
+          .BlackLayerModal {
+            .EnlargedImage {
+              width: 92%;
+            }
+            .CloseIcon {
+              right: 4%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .DetailPage {
+    width: 90%; /*fallback for browsers dont use support calc*/
+    width: -webkit-calc(100% - 32px);
+    width: -moz-calc(100% - 32px);
+    width: calc(100% - 32px);
+    padding: 16px 0 32px 0;
+
+    .ContentContainer {
+      padding: 24px 16px;
+    }
+  }
+}

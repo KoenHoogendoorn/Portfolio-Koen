@@ -1,0 +1,60 @@
+@import "../../shared/variables.scss";
+
+.Link {
+  color: $clr-text;
+  font-size: $fnt-size-big;
+  text-decoration: none;
+  position: relative;
+
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+
+  &::after {
+    content: "";
+    background: $clr-primary;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 32px;
+    height: 2px;
+    transition: width 0.2s;
+    -webkit-transition: width 0.2s;
+  }
+
+  &:hover {
+    color: $clr-primary;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &:active {
+    color: $clr-primary-hover;
+  }
+}
+
+.Left {
+  &::after {
+    margin: initial;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.Logo {
+  font-weight: bold;
+  &::after {
+    width: 16px;
+  }
+}
+
+.NavigationItem {
+  font-size: $fnt-size-medium;
+}

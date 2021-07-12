@@ -1,0 +1,43 @@
+@import "../../shared/variables.scss";
+
+.HomePage {
+  padding-bottom: 160px;
+  .IntroductionSection {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 140px;
+
+    .PortraitKoen {
+      width: 140px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: $fnt-size-big;
+      margin-bottom: 16px;
+    }
+  }
+  .ProjectsSection {
+    .ProjectsSectionTitle {
+      margin-bottom: 48px;
+    }
+
+    .ProjectPreviewItems {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .HomePage {
+    width: 90%; /*fallback for browsers dont use support calc*/
+    width: -webkit-calc(100% - 32px);
+    width: -moz-calc(100% - 32px);
+    width: calc(100% - 32px);
+    padding: 32px 0 $spc-between-sections-mobile 0; //80 - 48 = 32 for navbar
+  }
+}

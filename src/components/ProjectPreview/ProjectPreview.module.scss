@@ -1,0 +1,66 @@
+@import "../../shared/variables.scss";
+
+.ProjectPreview {
+  width: calc(50% - 16px);
+  margin-bottom: 96px;
+
+  transition: color 0.4s;
+  -webkit-transition: color 0.4s;
+
+  // remove default link styles
+  color: $clr-text;
+  text-decoration: none;
+
+  .ProjectImageContainer {
+    width: 100%;
+    height: 260px;
+    margin-bottom: 20px;
+    position: relative;
+
+    .ProjectImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      vertical-align: top;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba($color: $clr-primary, $alpha: 0.85);
+      opacity: 0;
+      transition: opacity 0.4s;
+      -webkit-transition: opacity 0.4s;
+    }
+  }
+  .ProjectName {
+    margin-bottom: 12px;
+  }
+
+  .ProjectTagline {
+    font-family: "Rubik", sans-serif;
+    font-size: $fnt-size-small;
+  }
+
+  &:hover {
+    color: $clr-primary;
+    .ProjectImageContainer {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 596px) {
+//   .DndProjectPreview {
+//     width: 100%;
+
+//     .DndLogo {
+//       margin-bottom: 4px;
+//     }
+//   }
+// }

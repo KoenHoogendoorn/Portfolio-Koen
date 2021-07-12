@@ -1,0 +1,22 @@
+@import "../../shared/variables.scss";
+
+.SignOffSection {
+  .Divider {
+    border: 1px solid $clr-primary;
+    margin-bottom: 96px;
+  }
+  .SignOffLinks {
+    display: flex;
+    flex-wrap: wrap;
+    .LinkContainer {
+      width: 50%;
+      margin-top: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .SignOffSection {
+    margin-top: $spc-between-sections-mobile;
+  }
+}

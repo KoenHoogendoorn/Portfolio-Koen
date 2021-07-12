@@ -1,0 +1,48 @@
+// Color Names
+$clr-butteryWhite: #fffce8;
+$clr-foggyGrey: #d1cebd;
+$clr-dawn: #a09e93;
+$clr-vulcan: #0c0e19;
+$clr-bunker: #07090f;
+$clr-black: #000000;
+$clr-martinique: #2a294c;
+$clr-anzac: #e1b554;
+$clr-driftwood: #a88740;
+$clr-pesto: #7a6432;
+$clr-irishCoffee: #5a4822;
+$clr-mediumCarmine: #b53b3b;
+
+// Buttons/links
+$clr-primary: $clr-anzac;
+$clr-primary-hover: $clr-driftwood;
+$clr-primary-active: $clr-pesto;
+$clr-primary-disabled: $clr-irishCoffee;
+
+$clr-secondary: $clr-vulcan;
+$clr-secondary-hover: $clr-bunker;
+$clr-secondary-active: $clr-black;
+
+$clr-arrow: $clr-butteryWhite;
+$clr-arrow-hover: $clr-foggyGrey;
+$clr-arrow-active: $clr-dawn;
+
+// Text
+$clr-text: black;
+$clr-title: $clr-anzac;
+
+// Body font
+$fnt-size-big: 24px;
+$fnt-lineHeight-big: 1.5;
+
+$fnt-size-medium: 20px;
+$fnt-lineHeight-medium: 1.4;
+
+$fnt-size-small: 16px;
+$fnt-lineHeight-small: 1.4;
+
+// Spaces
+$spc-between-sections-desktop: 160px;
+$spc-between-sections-mobile: 80px;
+
+$spc-under-textAvatar-desktop: 48px;
+$spc-under-textAvatar-mobile: 24px;

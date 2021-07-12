@@ -1,0 +1,81 @@
+@import "./shared/variables.scss";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", sans-serif;
+  font-size: $fnt-size-medium;
+  color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2 {
+  font-family: "Quando", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+a {
+  font-weight: 500;
+
+  &:hover {
+    color: $clr-primary-hover;
+  }
+  &:active {
+    color: $clr-primary-active;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  body {
+    font-size: $fnt-size-medium;
+  }
+
+  p {
+    line-height: $fnt-lineHeight-medium;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
