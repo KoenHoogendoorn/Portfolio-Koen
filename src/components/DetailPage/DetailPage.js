@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm";
+// import gfm from "remark-gfm";
 import classes from "./DetailPage.module.scss";
 
 import SignOffSection from "../../containers/SignOffSection/SignOffSection";
@@ -16,23 +16,23 @@ function ScrollToTopOnMount() {
 }
 
 const DetailPage = (props) => {
-  const projectsMetaData = [...props.projectsMetaData];
+  // const projectsMetaData = [...props.projectsMetaData];
 
-  const links = projectsMetaData.map((project) => (
-    <React.Fragment key={`NL-${project.id}`}>
-      <NavLink
-        className={classes.ProjectLink}
-        activeClassName={classes.ActiveProjectLink}
-        to={`/${project.name
-          .replace(/ +/g, "-")
-          .replace(/'/g, "")
-          .toLowerCase()}`}
-      >
-        {project.name}
-      </NavLink>
-      <span className={classes.Slash}> / </span>
-    </React.Fragment>
-  ));
+  // const links = projectsMetaData.map((project) => (
+  //   <React.Fragment key={`NL-${project.id}`}>
+  //     <NavLink
+  //       className={classes.ProjectLink}
+  //       activeClassName={classes.ActiveProjectLink}
+  //       to={`/${project.name
+  //         .replace(/ +/g, "-")
+  //         .replace(/'/g, "")
+  //         .toLowerCase()}`}
+  //     >
+  //       {project.name}
+  //     </NavLink>
+  //     <span className={classes.Slash}> / </span>
+  //   </React.Fragment>
+  // ));
 
   const [enlargedImageSrc, setEnlargedImageSrc] = useState("");
 
@@ -77,28 +77,29 @@ const DetailPage = (props) => {
     <React.Fragment>
       <ScrollToTopOnMount />
       <div className={classes.ContentContainer}>
-        <h1>{props.name}</h1>
-        <p>{props.tagline}</p>
+        <h1 className={classes.ProjectTitle}>{props.name}</h1>
+        <p className={classes.Tagline}>{props.tagline}</p>
         <ReactMarkdown
-          remarkPlugins={[gfm]}
           className={classes.Content}
           components={{
             img: ({ node, ...props }) => imageElement({ node, ...props })
           }}
+          unwrapDisallowed={true}
         >
           {props.content}
         </ReactMarkdown>
       </div>
-      <nav>Projects: {links}</nav>
+      <SignOffSection />
+      {/* <nav>Projects: {links}</nav> */}
     </React.Fragment>
   );
 
   const aboutContent = (
     <React.Fragment>
       <div className={classes.ContentContainer}>
-        <h1>{props.name}</h1>
-        <p>{props.tagline}</p>
-        <ReactMarkdown remarkPlugins={[gfm]} className={classes.Content}>
+        <h1 className={classes.ProjectTitle}>{props.name}</h1>
+        <p className={classes.Tagline}>{props.tagline}</p>
+        <ReactMarkdown className={classes.Content}>
           {props.content}
         </ReactMarkdown>
       </div>
