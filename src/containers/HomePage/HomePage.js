@@ -16,7 +16,10 @@ const HomePage = (props) => {
       id={project.id}
       image={project.imageSrc}
       tagline={project.tagline}
-      to={`/${project.name.replace(/ +/g, "-").toLowerCase()}`}
+      to={`/${project.name
+        .replace(/ +/g, "-")
+        .replace(/'/g, "")
+        .toLowerCase()}`}
     />
   ));
 
