@@ -15,6 +15,10 @@ const HomePage = (props) => {
       name={project.name}
       id={project.id}
       image={project.imageSrc}
+      alt={project.imageAlt}
+      logo={project.logoSrc}
+      logoAlt={project.logoAlt}
+      textLogo={project.textLogo}
       tagline={project.tagline}
       to={`/${project.name
         .replace(/ +/g, "-")

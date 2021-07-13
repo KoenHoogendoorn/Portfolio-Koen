@@ -23,6 +23,36 @@
       object-fit: cover;
       vertical-align: top;
     }
+
+    .LogoContainer {
+      position: absolute;
+      height: 196px;
+      width: 196px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: white;
+      border-radius: 50%;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.4s;
+      -webkit-transition: opacity 0.4s;
+
+      .Logo {
+        position: absolute;
+        width: 117px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .TextLogo {
+        width: 56px;
+      }
+    }
     &::after {
       content: "";
       position: absolute;
@@ -48,6 +78,9 @@
   &:hover {
     color: $clr-primary;
     .ProjectImageContainer {
+      .LogoContainer {
+        opacity: 1;
+      }
       &::after {
         opacity: 1;
       }
