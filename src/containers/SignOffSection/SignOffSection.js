@@ -15,6 +15,7 @@ const SignOffSection = (props) => {
           className={classes.ProjectLink}
           activeClassName={classes.ActiveProjectLink}
           alignedLeft={true}
+          internal={true}
           to={`/${project.name
             .replace(/ +/g, "-")
             .replace(/'/g, "")
