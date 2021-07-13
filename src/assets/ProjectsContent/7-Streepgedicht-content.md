@@ -14,4 +14,6 @@ This tool gets news article titles from popular dutch news platform nu.nl. It gr
 
 I designed the tool and a friend of mine developed it.
 
+### Website
+
 The live version of this tool can be found [here](https://streepgedicht.nl/).

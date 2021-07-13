@@ -20,4 +20,6 @@ My main job at Kinder was to make sure all users would have a great experience w
 
 ![Mockup of a signup page for charities](ProjectsImages/Kinder/Kinder-organisations-mockup.jpg)
 
+### Website
+
 More on Kinder can be found on their [website](https://kinder.world/)

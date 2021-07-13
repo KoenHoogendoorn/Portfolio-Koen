@@ -40,4 +40,6 @@ The main goal of the website is for people to get in contact with Jelle to hire 
 
 In this project I was the project manager and overall designer. Together with another developer we brought my ideas to life.
 
+### Website
+
 The live version of this website can be found [here](https://jellekuiper.nl/).

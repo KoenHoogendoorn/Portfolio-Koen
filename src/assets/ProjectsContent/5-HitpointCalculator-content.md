@@ -14,4 +14,6 @@ Especially during a battle, there are a lot of statistics and numbers to keep tr
 
 I designed the app and a colleague who I play D&D with developed it.
 
+### Website
+
 The live version of this tool can be found [here](https://aartvanempel.github.io/hitpoint-calculator/).
