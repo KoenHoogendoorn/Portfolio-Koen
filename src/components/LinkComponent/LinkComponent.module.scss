@@ -58,3 +58,15 @@
 .NavigationItem {
   font-size: $fnt-size-medium;
 }
+
+@media screen and (max-width: 960px) {
+  .Link {
+    font-size: $fnt-size-medium;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Link {
+    font-size: $fnt-size-small;
+  }
+}

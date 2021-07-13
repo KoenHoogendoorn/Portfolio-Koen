@@ -5,9 +5,11 @@
     border: 1px solid $clr-primary;
     margin-bottom: 96px;
   }
+
   .SignOffLinks {
     display: flex;
     flex-wrap: wrap;
+
     .LinkContainer {
       width: 50%;
       margin-top: 32px;
@@ -15,8 +17,69 @@
   }
 }
 
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 960px) {
   .SignOffSection {
-    margin-top: $spc-between-sections-mobile;
+    .SignOffLinks {
+      .LinkContainer {
+        &:nth-of-type(2),
+        &:nth-of-type(4) {
+          width: 45%;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .SignOffSection {
+    .Divider {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .SignOffSection {
+    .SignOffLinks {
+      .LinkContainer {
+        &:nth-of-type(2),
+        &:nth-of-type(4) {
+          width: 40%;
+          margin-left: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .SignOffSection {
+    .Divider {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .SignOffLinks {
+      flex-direction: column;
+      text-align: center;
+
+      .LinkContainer {
+        width: unset;
+
+        &:nth-of-type(2),
+        &:nth-of-type(4) {
+          width: unset;
+          margin-left: unset;
+        }
+
+        a::after {
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }

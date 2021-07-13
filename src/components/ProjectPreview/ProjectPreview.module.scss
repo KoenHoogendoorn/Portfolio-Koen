@@ -55,12 +55,18 @@
   }
 }
 
-// @media screen and (max-width: 596px) {
-//   .DndProjectPreview {
-//     width: 100%;
+@media screen and (max-width: 960px) {
+  .ProjectPreview {
+    width: calc(50% - 8px);
+    .ProjectImageContainer {
+      height: 220px;
+    }
+  }
+}
 
-//     .DndLogo {
-//       margin-bottom: 4px;
-//     }
-//   }
-// }
+@media screen and (max-width: 600px) {
+  .ProjectPreview {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+}
