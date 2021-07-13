@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 
 import ReactMarkdown from "react-markdown";
-// import gfm from "remark-gfm";
+
 import classes from "./DetailPage.module.scss";
 
 import SignOffSection from "../../containers/SignOffSection/SignOffSection";
-import LinkComponent from "../LinkComponent/LinkComponent";
 
 function ScrollToTopOnMount() {
   useEffect(() => {

@@ -1,5 +1,3 @@
-// import { updateObject } from "../../shared/utility";
-
 import DragonsQuillLogo from "../../assets/ProjectLogos/DragonsQuillLogo.svg";
 import HitpointCalculatorLogo from "../../assets/ProjectLogos/HitpointCalculatorLogo.svg";
 
@@ -86,20 +84,6 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    // case "SET_ACTIVE_FEATURED_PROJECT":
-    //   let featuredProjects = [...state.featuredProjects];
-    //   let clickedProject = { ...featuredProjects[action.index] };
-
-    //   featuredProjects.forEach((project) => {
-    //     project.active = false;
-    //   });
-
-    //   clickedProject.active = true;
-    //   featuredProjects[action.index] = clickedProject;
-
-    //   const updatedState = { featuredProjects: featuredProjects };
-
-    //   return updateObject(state, updatedState);
     default:
       return state;
   }
