@@ -66,7 +66,7 @@ const DetailPage = (props) => {
           components={{
             img: ({ node, ...props }) => imageElement({ node, ...props })
           }}
-          unwrapDisallowed={true}
+          linkTarget="_blank"
         >
           {props.content}
         </ReactMarkdown>
@@ -80,7 +80,13 @@ const DetailPage = (props) => {
       <div className={classes.ContentContainer}>
         <h1 className={classes.ProjectTitle}>{props.name}</h1>
         <p className={classes.Tagline}>{props.tagline}</p>
-        <ReactMarkdown className={classes.Content}>
+        <ReactMarkdown
+          className={classes.Content}
+          components={{
+            img: ({ node, ...props }) => imageElement({ node, ...props })
+          }}
+          linkTarget="_blank"
+        >
           {props.content}
         </ReactMarkdown>
       </div>
