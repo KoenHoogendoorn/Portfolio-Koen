@@ -21,8 +21,7 @@
   .SignOffSection {
     .SignOffLinks {
       .LinkContainer {
-        &:nth-of-type(2),
-        &:nth-of-type(4) {
+        &:nth-of-type(even) {
           width: 45%;
           margin-left: 5%;
         }
@@ -43,8 +42,7 @@
   .SignOffSection {
     .SignOffLinks {
       .LinkContainer {
-        &:nth-of-type(2),
-        &:nth-of-type(4) {
+        &:nth-of-type(even) {
           width: 40%;
           margin-left: 10%;
         }
@@ -70,8 +68,7 @@
       .LinkContainer {
         width: unset;
 
-        &:nth-of-type(2),
-        &:nth-of-type(4) {
+        &:nth-of-type(even) {
           width: unset;
           margin-left: unset;
         }

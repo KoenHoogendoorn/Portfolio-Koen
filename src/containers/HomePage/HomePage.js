@@ -41,7 +41,7 @@ const HomePage = (props) => {
         <h2 className={classes.ProjectsSectionTitle}>Projects</h2>
         <div className={classes.ProjectPreviewItems}>{projectPreviewItems}</div>
       </div>
-      <SignOffSection />
+      <SignOffSection aboutPage={false} detailPage={false} />
     </div>
   );
 };

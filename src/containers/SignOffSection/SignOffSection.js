@@ -1,13 +1,32 @@
 import React from "react";
+import { connect } from "react-redux";
 import LinkComponent from "../../components/LinkComponent/LinkComponent";
 import classes from "./SignOffSection.module.scss";
 
 const SignOffSection = (props) => {
-  return (
-    <div className={classes.SignOffSection}>
-      <hr className={classes.Divider} />
-      <h2>I'm currently looking for new opportunities</h2>
-      <div className={classes.SignOffLinks}>
+  const projectsMetaData = [...props.projectsMetaData];
+
+  let links;
+
+  if (props.detailPage) {
+    links = projectsMetaData.map((project) => (
+      <div className={classes.LinkContainer} key={`NL-${project.id}`}>
+        <LinkComponent
+          className={classes.ProjectLink}
+          activeClassName={classes.ActiveProjectLink}
+          alignedLeft={true}
+          to={`/${project.name
+            .replace(/ +/g, "-")
+            .replace(/'/g, "")
+            .toLowerCase()}`}
+        >
+          {project.name}
+        </LinkComponent>
+      </div>
+    ));
+  } else {
+    links = (
+      <React.Fragment>
         <div className={classes.LinkContainer}>
           <LinkComponent
             internal={false}
@@ -42,8 +61,31 @@ const SignOffSection = (props) => {
             </LinkComponent>
           </div>
         )}
-      </div>
+      </React.Fragment>
+    );
+  }
+
+  let title;
+
+  if (props.detailPage && !props.aboutPage) {
+    title = <h2>Check out these other projects</h2>;
+  } else {
+    title = <h2>I'm currently looking for new opportunities</h2>;
+  }
+
+  return (
+    <div className={classes.SignOffSection}>
+      <hr className={classes.Divider} />
+      {title}
+      <div className={classes.SignOffLinks}>{links}</div>
     </div>
   );
 };
-export default SignOffSection;
+
+const mapStateToProps = (state) => {
+  return {
+    projectsMetaData: state.projectsMetaData
+  };
+};
+
+export default connect(mapStateToProps)(SignOffSection);

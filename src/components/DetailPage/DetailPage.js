@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
-// import { NavLink } from "react-router-dom";
+
 import ReactMarkdown from "react-markdown";
 // import gfm from "remark-gfm";
 import classes from "./DetailPage.module.scss";
 
 import SignOffSection from "../../containers/SignOffSection/SignOffSection";
+import LinkComponent from "../LinkComponent/LinkComponent";
 
 function ScrollToTopOnMount() {
   useEffect(() => {
@@ -16,24 +17,6 @@ function ScrollToTopOnMount() {
 }
 
 const DetailPage = (props) => {
-  // const projectsMetaData = [...props.projectsMetaData];
-
-  // const links = projectsMetaData.map((project) => (
-  //   <React.Fragment key={`NL-${project.id}`}>
-  //     <NavLink
-  //       className={classes.ProjectLink}
-  //       activeClassName={classes.ActiveProjectLink}
-  //       to={`/${project.name
-  //         .replace(/ +/g, "-")
-  //         .replace(/'/g, "")
-  //         .toLowerCase()}`}
-  //     >
-  //       {project.name}
-  //     </NavLink>
-  //     <span className={classes.Slash}> / </span>
-  //   </React.Fragment>
-  // ));
-
   const [enlargedImageSrc, setEnlargedImageSrc] = useState("");
 
   const closeModal = () => {
@@ -89,8 +72,7 @@ const DetailPage = (props) => {
           {props.content}
         </ReactMarkdown>
       </div>
-      <SignOffSection />
-      {/* <nav>Projects: {links}</nav> */}
+      <SignOffSection aboutPage={false} detailPage={true} />
     </React.Fragment>
   );
 
@@ -103,7 +85,7 @@ const DetailPage = (props) => {
           {props.content}
         </ReactMarkdown>
       </div>
-      <SignOffSection aboutPage={true} />
+      <SignOffSection aboutPage={true} detailPage={false} />
     </React.Fragment>
   );
 
