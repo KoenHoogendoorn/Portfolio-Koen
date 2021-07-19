@@ -39,18 +39,6 @@ const initialState = {
       logoAlt: "Dragon's Quill logo"
     },
     {
-      id: "hc",
-      name: "Hitpoint Calculator",
-      tagline:
-        "Helps people who suck at math to track hitpoints in D&D battles",
-      imageSrc:
-        "/ProjectsImages/HitpointCalculator/HitpointCalculator-minis.jpg",
-      imageAlt:
-        "Phone with mockup of hitpoint calculator app open in between of d and d miniatures",
-      logoSrc: HitpointCalculatorLogo,
-      altSrc: "Hitpoint Calculator logo"
-    },
-    {
       id: "fo",
       name: "Financial Offices",
       tagline: "A center for financial offices in Amsterdam",
@@ -68,6 +56,18 @@ const initialState = {
       imageAlt: "Multiple Streepgedicht examples",
       logoSrc: StreepgedichtLogo,
       logoAlt: "Streepgedicht logo"
+    },
+    {
+      id: "hc",
+      name: "Hitpoint Calculator",
+      tagline:
+        "Helps people who suck at math to track hitpoints in D&D battles",
+      imageSrc:
+        "/ProjectsImages/HitpointCalculator/HitpointCalculator-minis.jpg",
+      imageAlt:
+        "Phone with mockup of hitpoint calculator app open in between of d and d miniatures",
+      logoSrc: HitpointCalculatorLogo,
+      altSrc: "Hitpoint Calculator logo"
     },
     {
       id: "th",

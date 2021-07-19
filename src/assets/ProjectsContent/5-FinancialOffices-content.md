@@ -1,8 +1,10 @@
-![Mockup of the Financial offices website](ProjectsImages/FinancialOffices/FinancialOffices-mockup.jpg)
+![Photo of the Financial offices building at night](ProjectsImages/FinancialOffices/FinancialOffices-gebouw.jpg)
 
 ### Problem
 
 While talking about what this site should propagate, my client and I worked out these requirements: **generate trust**, **make people call** and **focus on their strengths**.
+
+![Mockup of the Financial offices website](ProjectsImages/FinancialOffices/FinancialOffices-mockup.jpg)
 
 ### Solution
 
