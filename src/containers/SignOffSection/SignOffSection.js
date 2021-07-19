@@ -9,22 +9,28 @@ const SignOffSection = (props) => {
   let links;
 
   if (props.detailPage) {
-    links = projectsMetaData.map((project) => (
-      <div className={classes.LinkContainer} key={`NL-${project.id}`}>
-        <LinkComponent
-          className={classes.ProjectLink}
-          activeClassName={classes.ActiveProjectLink}
-          alignedLeft={true}
-          internal={true}
-          to={`/${project.name
-            .replace(/ +/g, "-")
-            .replace(/'/g, "")
-            .toLowerCase()}`}
-        >
-          {project.name}
-        </LinkComponent>
-      </div>
-    ));
+    links = projectsMetaData.map((project) => {
+      const projectPath = `/${project.name
+        .replace(/ +/g, "-")
+        .replace(/'/g, "")
+        .toLowerCase()}`;
+
+      if (props.location !== projectPath) {
+        return (
+          <div className={classes.LinkContainer} key={`NL-${project.id}`}>
+            <LinkComponent
+              className={classes.ProjectLink}
+              activeClassName={classes.ActiveProjectLink}
+              alignedLeft={true}
+              internal={true}
+              to={projectPath}
+            >
+              {project.name}
+            </LinkComponent>
+          </div>
+        );
+      }
+    });
   } else {
     links = (
       <React.Fragment>

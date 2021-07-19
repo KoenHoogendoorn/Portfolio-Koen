@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import { useLocation } from "react-router-dom";
 
 import ReactMarkdown from "react-markdown";
 
@@ -16,6 +17,8 @@ function ScrollToTopOnMount() {
 }
 
 const DetailPage = (props) => {
+  const location = useLocation();
+
   const [enlargedImageSrc, setEnlargedImageSrc] = useState("");
 
   const closeModal = () => {
@@ -71,7 +74,11 @@ const DetailPage = (props) => {
           {props.content}
         </ReactMarkdown>
       </div>
-      <SignOffSection aboutPage={false} detailPage={true} />
+      <SignOffSection
+        aboutPage={false}
+        detailPage={true}
+        location={location.pathname}
+      />
     </React.Fragment>
   );
 
