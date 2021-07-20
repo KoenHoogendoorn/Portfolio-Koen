@@ -61,12 +61,16 @@ p {
 
 a {
   font-weight: 500;
+}
 
-  &:hover {
-    color: $clr-primary-hover;
-  }
-  &:active {
-    color: $clr-primary-active;
+@media (hover: hover) and (pointer: fine) {
+  a {
+    &:hover {
+      color: $clr-primary-hover;
+    }
+    &:active {
+      color: $clr-primary-active;
+    }
   }
 }
 

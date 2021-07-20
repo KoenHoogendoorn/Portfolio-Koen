@@ -11,9 +11,9 @@ import thunk from "redux-thunk";
 import reducer from "./store/reducers/contentData";
 
 const composeEnhancers =
-  process.env.NODE_ENV === "development"
+  (process.env.NODE_ENV === "development"
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    : null || compose;
+    : null) || compose;
 // process.env.NODE_ENV terniary expression makes redux devtools only available in development
 
 const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));

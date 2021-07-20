@@ -1,6 +1,7 @@
 @import "../../shared/variables.scss";
 
 .ProjectPreview {
+  width: 48%; //fallback width
   width: calc(50% - 16px);
   margin-bottom: 96px;
 
@@ -74,15 +75,19 @@
     font-family: "Rubik", sans-serif;
     font-size: $fnt-size-small;
   }
+}
 
-  &:hover {
-    color: $clr-primary;
-    .ProjectImageContainer {
-      .LogoContainer {
-        opacity: 1;
-      }
-      &::after {
-        opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .ProjectPreview {
+    &:hover {
+      color: $clr-primary;
+      .ProjectImageContainer {
+        .LogoContainer {
+          opacity: 1;
+        }
+        &::after {
+          opacity: 1;
+        }
       }
     }
   }
