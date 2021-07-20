@@ -4,7 +4,7 @@ import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 
 import classes from "./App.module.scss";
 
-import LoadingVideo from "./assets/Loading.mp4";
+import LoadingIcon from "./assets/LoadingIcon.gif";
 import NavigationBar from "./containers/NavigationBar/NavigationBar";
 
 const DetailPage = React.lazy(() =>
@@ -71,11 +71,7 @@ function App(props) {
 
   let content;
 
-  const loadingVideo = (
-    <video className={classes.LoadingGif} autoPlay="autoplay" loop="loop">
-      <source src={LoadingVideo} type="video/mp4" />
-    </video>
-  );
+  const loadingVideo = <img src={LoadingIcon} className={classes.LoadingGif} />;
 
   if (projectsTexts !== null) {
     content = (
