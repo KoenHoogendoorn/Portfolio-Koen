@@ -1,11 +1,11 @@
 import JelleKuiperLogo from "../../assets/ProjectLogos/JelleKuiper-Logo.svg";
+import StefanoKeizersLogo from "../../assets/ProjectLogos/StefanoKeizers-Logo.svg";
 import KinderLogo from "../../assets/ProjectLogos/Kinder-Logo.svg";
 import DragonsQuillLogo from "../../assets/ProjectLogos/DragonsQuill-Logo.svg";
 import HitpointCalculatorLogo from "../../assets/ProjectLogos/HitpointCalculator-Logo.svg";
 import FinancialOfficesLogo from "../../assets/ProjectLogos/FinancialOffices-Logo.png";
 import StreepgedichtLogo from "../../assets/ProjectLogos/Streepgedicht-Logo.svg";
 import MartinKoolhovenLogo from "../../assets/ProjectLogos/MartinKoolhoven-Logo.svg";
-import TitiaHoogendoornLogo from "../../assets/ProjectLogos/TitiaHoogendoorn-Logo.svg";
 
 const initialState = {
   projectsMetaData: [
@@ -30,13 +30,15 @@ const initialState = {
       logoAlt: "Kinder logo"
     },
     {
-      id: "dq",
-      name: "Dragon's Quill",
-      tagline: "Helps people write structured RPG adventures",
-      imageSrc: "/ProjectsImages/DragonsQuill/DragonsQuill-playingPhoto.jpg",
-      imageAlt: "Koen playing dungeons and dragons",
-      logoSrc: DragonsQuillLogo,
-      logoAlt: "Dragon's Quill logo"
+      id: "sk",
+      name: "Stefano Keizers",
+      tagline: "An absurdist comedian",
+      imageSrc: "/ProjectsImages/StefanoKeizers/StefanoKeizers-press.jpg",
+      imageAlt:
+        "Photo of a Stefano Keizers in his underwear in front of a red background",
+      logoSrc: StefanoKeizersLogo,
+      logoAlt: "Stefano Keizers logo",
+      textLogo: true
     },
     {
       id: "fo",
@@ -46,6 +48,16 @@ const initialState = {
       imageAlt: "The building of Financial Offices by night",
       logoSrc: FinancialOfficesLogo,
       logoAlt: "Financial Offices logo"
+    },
+    {
+      id: "mk",
+      name: "Martin Koolhoven",
+      tagline: "A director that loves westerns",
+      imageSrc: "/ProjectsImages/MartinKoolhoven/MartinKoolhoven-opDeSet.jpg",
+      imageAlt: "Martin Koolhoven directing a movie",
+      logoSrc: MartinKoolhovenLogo,
+      logoAlt: "Martin Koolhoven logo",
+      textLogo: true
     },
     {
       id: "st",
@@ -58,6 +70,15 @@ const initialState = {
       logoAlt: "Streepgedicht logo"
     },
     {
+      id: "dq",
+      name: "Dragon's Quill",
+      tagline: "Helps people write structured RPG adventures",
+      imageSrc: "/ProjectsImages/DragonsQuill/DragonsQuill-playingPhoto.jpg",
+      imageAlt: "Koen playing dungeons and dragons",
+      logoSrc: DragonsQuillLogo,
+      logoAlt: "Dragon's Quill logo"
+    },
+    {
       id: "hc",
       name: "Hitpoint Calculator",
       tagline:
@@ -68,26 +89,6 @@ const initialState = {
         "Phone with mockup of hitpoint calculator app open in between of d and d miniatures",
       logoSrc: HitpointCalculatorLogo,
       altSrc: "Hitpoint Calculator logo"
-    },
-    {
-      id: "th",
-      name: "Titia Hoogendoorn",
-      tagline: "An artistic content creator",
-      imageSrc: "/ProjectsImages/TitiaHoogendoorn/TitiaHoogendoorn-meeting.jpg",
-      imageAlt: "S meeting with Titia and Koen",
-      logoSrc: TitiaHoogendoornLogo,
-      logoAlt: "Titia Hoogendoorn logo",
-      textLogo: true
-    },
-    {
-      id: "mk",
-      name: "Martin Koolhoven",
-      tagline: "A director that loves westerns",
-      imageSrc: "/ProjectsImages/MartinKoolhoven/MartinKoolhoven-opDeSet.jpg",
-      imageAlt: "Martin Koolhoven directing a movie",
-      logoSrc: MartinKoolhovenLogo,
-      logoAlt: "Martin Koolhoven logo",
-      textLogo: true
     }
   ],
   pages: [
