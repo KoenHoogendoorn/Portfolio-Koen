@@ -84,6 +84,7 @@ const DetailPage = (props) => {
 
   const aboutContent = (
     <React.Fragment>
+      <ScrollToTopOnMount />
       <div className={classes.ContentContainer}>
         <h1 className={classes.ProjectTitle}>{props.name}</h1>
         <p className={classes.Tagline}>{props.tagline}</p>

@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./HomePage.module.scss";
 import { connect } from "react-redux";
 
-import PortraitKoen from "../../assets/PortraitKoen.jpg";
+import PortraitKoen from "../../assets/PortraitKoen.png";
 
 import LinkComponent from "../../components/LinkComponent/LinkComponent";
 import ProjectPreview from "../../components/ProjectPreview/ProjectPreview";

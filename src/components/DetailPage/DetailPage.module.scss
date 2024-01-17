@@ -24,7 +24,7 @@
 
     .Content {
       p {
-        margin-bottom: 64px;
+        margin-bottom: 32px;
         img {
           width: calc(100% + 360px);
           margin-left: -180px;
@@ -98,6 +98,16 @@
         &:last-child {
           margin-bottom: 96px;
         }
+      }
+
+      ul {
+        li {
+          margin-bottom: 24px;
+          &::marker {
+            color: $clr-primary;
+          }
+        }
+        margin-bottom: 32px
       }
 
       h3 {

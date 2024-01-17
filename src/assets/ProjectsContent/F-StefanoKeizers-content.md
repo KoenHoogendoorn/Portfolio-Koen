@@ -12,7 +12,7 @@ The website for Stefano’s show had to be an online representation of his uniqu
 
 ### Solution
 
-After talking with Stefano about what he wanted out of his website, I came up with some ideas and sketched them out. A few iterations later we came to a design that used his expressive photo’s as the base for his site. By visually showing body parts on top of eachother, starting with his upperbody and going lower with each element, it creates a strange, almost naked representation of him. This fit well with his show that he wanted to promote. After his first show ended, he liked the visual elements so much that he continued the style for his next shows, up until the most recent one in 2021.
+After talking with Stefano about what he wanted out of his website, I came up with some ideas and sketched them out. A few iterations later we came to a design that used his expressive photo’s as the base for his site. By visually showing his body parts on top of eachother, starting with his upperbody and going lower with each element, it creates a strange, almost naked representation of him. This fit well with his show that he wanted to promote. After his first show ended, he liked the visual elements so much that he continued the style for his next shows, up until the most recent one in 2021.
 
 ![The different websites for the 3 shows next to eachother](ProjectsImages/StefanoKeizers/StefanoKeizers-allHomes-mockup.jpg)
 
@@ -25,3 +25,7 @@ In this project I was the project manager and overall designer. Together with an
 ### Website
 
 The live version of this website can be found [here](http://stefanokeizers.nl/).
+
+### Update 2023
+
+The site for Stefano Keizers is still live, but in the header it directs to a site dedicated to his new persona: 'Donny Ronny'. The site created for this new persona is a placeholder we made until Stefano/Donny has a bit more time to create something new.

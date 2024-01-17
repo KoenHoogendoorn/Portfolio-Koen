@@ -2,7 +2,7 @@
 
 ### Problem
 
-While running a Dungeons and Dragons game (read more about what that means [here](http://www.koenhoogendoorn.nl/dragon's-quill), I keep track of a lot of things at the same time. Who’s turn is it? What is everybody doing? Is everybody still having fun? What would a demonic overlord say to an angry dwarf dressed up as a butler?
+While running a Dungeons and Dragons game (read more about what that means [here](http://www.koenhoogendoorn.nl/dragon's-quill)), I keep track of a lot of things at the same time. Who’s turn is it? What is everybody doing? Is everybody still having fun? What would a demonic overlord say to an angry dwarf dressed up as a butler?
 
 ![Mockup of the Hitpoint Calculator project](ProjectsImages/HitpointCalculator/HitpointCalculator-flow-mockup.jpg)
 
