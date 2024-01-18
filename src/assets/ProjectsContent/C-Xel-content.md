@@ -2,7 +2,7 @@
 
 ### About xel
 
-xel (lowercase x!) is a premium WordPress hosting provider. Their goal is to help and unburden their customers with quality service and easy to use products. They're also always trying to look ahead and create innovative products to help people create and maintain websites.
+xel (lowercase x!) is a premium WordPress hosting provider. Their goal is to help and unburden their customers with quality service and easy to use products.
 
 ### My Role
 
