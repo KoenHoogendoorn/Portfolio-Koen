@@ -8,9 +8,22 @@ import HitpointCalculatorLogo from "../../assets/ProjectLogos/HitpointCalculator
 import FinancialOfficesLogo from "../../assets/ProjectLogos/FinancialOffices-Logo.png";
 import StreepgedichtLogo from "../../assets/ProjectLogos/Streepgedicht-Logo.svg";
 import MartinKoolhovenLogo from "../../assets/ProjectLogos/MartinKoolhoven-Logo.svg";
+import TitiaHoogendoornLogo from "../../assets/ProjectLogos/TitiaHoogendoorn-Logo.svg";
+import FactionGeneratorLogo from "../../assets/ProjectLogos/FactionGenerator-Logo.svg";
 
 const initialState = {
   projectsMetaData: [
+    {
+      id: "th",
+      name: "Titia Hoogendoorn",
+      tagline: "Actress, video and podcast creator and author",
+      imageSrc: "/ProjectsImages/TitiaHoogendoorn/TitiaHoogendoorn-meeting.jpg",
+      imageAlt:
+        "Koen and Titia behind a laptop, having a meeting about the website",
+      logoSrc: TitiaHoogendoornLogo,
+      logoAlt: "Titia Hoogendoorn logo",
+      textLogo: true
+    },
     {
       id: "km",
       name: "Kort Maar Prachtig",
@@ -111,6 +124,16 @@ const initialState = {
         "Phone with mockup of hitpoint calculator app open in between of d and d miniatures",
       logoSrc: HitpointCalculatorLogo,
       altSrc: "Hitpoint Calculator logo"
+    },
+    {
+      id: "fg",
+      name: "Faction Generator",
+      tagline: "Generates new factions to add to your fantasy world",
+      imageSrc: "/ProjectsImages/Factiongenerator/Factiongenerator-laptop.jpg",
+      imageAlt:
+        "Laptop with the faction generator app open on top of the map of Waterdeep",
+      logoSrc: FactionGeneratorLogo,
+      altSrc: "Faction Generator logo"
     }
   ],
   pages: [
