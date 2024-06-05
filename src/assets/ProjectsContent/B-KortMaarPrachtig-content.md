@@ -23,4 +23,4 @@ I designed the website and used Webflow to develop it.
 
 ### Website
 
-NOTE: The main video of the site is being worked on. While this is happening, a preview of this website can be found [here](https://kort-maar-prachtig.webflow.io/).
+The live version of this website can be found [here](https://www.kortmaarprachtig.nl/).
