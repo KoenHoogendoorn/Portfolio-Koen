@@ -77,7 +77,8 @@ const SignOffSection = (props) => {
   if (props.detailPage && !props.aboutPage) {
     title = <h2>Check out these other projects</h2>;
   } else {
-    title = <h2>I'm currently looking for new opportunities</h2>;
+    // title = <h2>I'm currently looking for new opportunities</h2>;
+    title = <h2>Feel free to shoot me a message</h2>;
   }
 
   return (
